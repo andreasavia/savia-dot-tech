@@ -6,12 +6,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      'theblack': '#000000',
-      'thewhite': '#FFFFFF',
-      'thespark': '#BEF754',
+
+    fontFamily: {
+      'mont': ['Montserrat']
     },
-    extend: {},
+    extend: {
+      colors: {
+        'theblack': '#000000',
+        'thewhite': '#FFFFFF',
+        'thespark': '#BEF754',
+      },
+    },
   },
   plugins: [
     require('prettier-plugin-tailwindcss')
